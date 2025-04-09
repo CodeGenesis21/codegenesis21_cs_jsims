@@ -92,6 +92,11 @@ public class JSimsMain extends javax.swing.JFrame {
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.SHIFT_DOWN_MASK));
         jMenuItem3.setText("New FieldofStudy");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         mnuOrganization.add(jMenuItem3);
 
         menuBar.add(mnuOrganization);
@@ -154,7 +159,13 @@ public class JSimsMain extends javax.swing.JFrame {
 
         NewFieldofStudy mm =new NewFieldofStudy(this ,true);  
 mm.setVisible(true);
+
     }//GEN-LAST:event_mnuOrganizationActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+NewFieldofStudy mm= new NewFieldofStudy(this ,true);
+mm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
