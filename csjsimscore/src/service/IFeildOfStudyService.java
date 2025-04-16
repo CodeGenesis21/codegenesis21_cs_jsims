@@ -4,10 +4,13 @@
  */
 package service;
 
+import domain.FeildOfStudy;
+import java.sql.SQLException;
 /**
  *
  * @author cslab
  */
 public interface IFeildOfStudyService {
-    
+    boolean register(FeildOfStudy FeildOfStudy)throws SQLException;
+ 
 }

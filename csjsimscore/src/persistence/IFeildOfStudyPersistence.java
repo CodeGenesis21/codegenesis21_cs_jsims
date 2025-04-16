@@ -4,10 +4,12 @@
  */
 package persistence;
 
+import domain.FeildOfStudy;
+import java.sql.SQLException;
 /**
  *
  * @author cslab
  */
 public interface IFeildOfStudyPersistence {
-    
+      boolean save(FeildOfStudy FeildOfStudy)throws SQLException ;
 }
